@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header> <h1>Contact page</h1> </header>
+
+ <main>
+    <form>
+        <div class="personal-input">
+            <label for="name">Name</label>
+            <input placeholder="eg Mabel" id="name" type="text" required >
+
+            <label for="email">Email</label>
+            <input placeholder="mabel@gmail.com" id="email" type="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input placeholder="1234"  id="phone" type="tel" required>
+            <label for="languages"> Language</label>
+            <select name="lan" id="languages">
+                <option value="English"> English</option>
+                <option value="Dutch"> Dutch</option>
+                <option value="French"> French</option>
+                <option value="Deutsch"> Deutsch</option>
+            </select>
+        </div>
+
+        <div class="gender-radio">
+            <label for="Male"> Male</label>
+            <input name="gender" id="Male" type="radio">
+
+            <label for="Female"> Female</label>
+            <input name="gender" id="Female" type="radio">
+        </div>
+
+        <div class="privacy-agreement">
+            <p>
+                <label for="privacy-policy"> Do you agree to the user rights and policy?</label>
+                <input id="privacy-policy"  type="checkbox" required>
+            </p>
+            <p>
+                <label for="email-list"> Would you like to subscribe to our email list?</label>
+                <input id="email-list"  type="checkbox">
+            </p>
+        </div>
+
+        <button type="submit"> Submit </button>
+    </form>
+</main>
+
+    <footer>
+    <p> &copy;Oseremen Efe</p>
+    </footer>
+
+
+</body>
+</html>
