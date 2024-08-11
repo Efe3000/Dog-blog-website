@@ -1,0 +1,35 @@
+@use"./variables.scss";
+@use"./header.scss";
+@use"./main.scss";
+@use"./footer.scss";
+
+* {
+    box-sizing: border-box;
+    font-family:serif;
+    color: #50514F;
+    }    
+    
+body{
+    background-color:variables.$bgcolor;
+    h1{
+        font-size: 30px;
+        font-weight:bold;
+    }
+    h2{
+        font-size: 25px;
+        font-weight:bold; 
+    }
+    h3{
+        font-size: 20px;
+        font-weight:bold;
+    }
+    @media screen and (max-width: 1000px) {
+        box-sizing: absolute;
+        position: absolute;
+        
+    }
+    
+}
+
+
+

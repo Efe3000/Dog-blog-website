@@ -1,0 +1,70 @@
+@use"./variables.scss";
+
+/* body-main */
+main{
+    border:5px;
+    margin:20px;
+
+    #box-section{
+        @media screen and (max-width: 1000px){
+            width: 400px;
+            height:auto;
+            margin:1px;
+            padding:0 1px 1px 1px;
+            border-radius: 1px;         
+        }
+    }
+    
+    .girl-img{ 
+        max-width: 250px;
+        float: right;
+        box-shadow: 2px 2px 2px 1px variables.$black;
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+    
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+
+        @media screen and (max-width: 1000px){
+            grid-template-columns: 1fr;
+        }
+
+        .section-container{
+            background-color: variables.$cream;
+            padding: 1rem 0 1rem 1rem;
+            border-radius: 15px;
+            color: variables.$black;
+            margin: 10px;
+        }
+        .section-container:hover{
+            transform: scale(1.1);
+        }
+        .section-container a{
+            color: variables.$black;
+            text-decoration: none;
+        }
+        }
+        .general-img{
+            max-width: 300px;
+        }
+        .article-img{
+            max-width: 250px;
+            box-shadow: 2px 2px 2px 1px variables.$black;
+            border-radius: 1rem 1rem 1rem 1rem;
+    }
+    /* about page */
+   & #main-about{
+          
+    & > #about-container{
+        padding:1rem;
+        margin: 1rem;
+    }
+    
+    }
+    & #form-main{
+        background-color: white;
+    }
+}
